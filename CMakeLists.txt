@@ -8,11 +8,18 @@ add_library(
 	CALCULATOR_lib
 	src/calculator.cpp
 )
-
+add_library(
+	COMPUTER_LIB
+	src/computer.cpp
+)
 add_executable(
 	${PROJECT_NAME}
 	src/main.cpp
 )
 target_link_libraries(
-${PROJECT_NAME}	CALCULATOR_lib
+	COMPUTER_LIB
+	CALCULATOR_lib
+)
+target_link_libraries(
+${PROJECT_NAME}	CALCULATOR_lib COMPUTER_LIB
 )

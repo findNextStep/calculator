@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "CMakeLists.txt": "makefile",
+        "*.cmake": "makefile",
+        "ostream": "cpp",
+        "iostream": "cpp"
+    },
+    "files.encoding": "gb18030"
+}

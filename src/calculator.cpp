@@ -12,6 +12,9 @@ calculator::~calculator(){}
 
 std::string calculator::showOut()
 {
+	if (num_array.empty()){
+		return "";
+	}
 	stringstream ss;
 	auto num = this->num_array.begin();
 	ss << *num;

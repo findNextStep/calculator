@@ -8,29 +8,29 @@ public:
 	calculator();
 	virtual ~calculator();
 	/**
-	 * @brief å±•ç¤ºå½“å‰ç®—å¼å†…å®¹
+	 * @brief Õ¹Ê¾µ±Ç°ËãÊ½ÄÚÈİ
 	 * 
-	 * @return std::string ç®—å¼å†…å®¹ 
+	 * @return std::string ËãÊ½ÄÚÈİ 
 	 */
 	std::string showOut();
 	/**
-	 * @brief å¢åŠ ä¸€ä¸ªæ–°çš„è¿ç®—
-	 * ç‰¹åˆ«çš„ï¼Œå¦‚æœè¾“å…¥è¿ç®—ç¬¦æ˜¯'S'ã€‚å°†å®šä¹‰ä¸ºå¼€æ–¹æ“ä½œï¼Œæ­¤æ—¶è¾“å…¥çš„è¿ç®—æ•°ä¸åšå¤„ç†
-	 * å¦‚æœè¾“å…¥çš„è¿ç®—ç¬¦æ˜¯' 'ã€‚å°†å®šä¹‰ä¸ºé‡ç½®æ“ä½œï¼Œæ­¤æ—¶è¾“å…¥çš„è¿ç®—æ•°å°†ä½œä¸ºåˆå§‹å€¼ä½¿ç”¨
-	 * @param operat è¿ç®—ç¬¦ 
-	 * @param num è¿ç®—æ•°
+	 * @brief Ôö¼ÓÒ»¸öĞÂµÄÔËËã
+	 * ÌØ±ğµÄ£¬Èç¹ûÊäÈëÔËËã·ûÊÇ'S'¡£½«¶¨ÒåÎª¿ª·½²Ù×÷£¬´ËÊ±ÊäÈëµÄÔËËãÊı²»×ö´¦Àí
+	 * Èç¹ûÊäÈëµÄÔËËã·ûÊÇ' '¡£½«¶¨ÒåÎªÖØÖÃ²Ù×÷£¬´ËÊ±ÊäÈëµÄÔËËãÊı½«×÷Îª³õÊ¼ÖµÊ¹ÓÃ
+	 * @param operat ÔËËã·û 
+	 * @param num ÔËËãÊı
 	 */
 	void newInput(char operat, numT num);
 	/**
-	 * @brief è·å–å½“å‰ç®—å¼ç»“æœ
+	 * @brief »ñÈ¡µ±Ç°ËãÊ½½á¹û
 	 * 
-	 * @return numT ç®—å¼ç»“æœ 
+	 * @return numT ËãÊ½½á¹û 
 	 */
 	numT result();
 private:
-	// ç®—å¼æ•°æ®
+	// ËãÊ½Êı¾İ
 	std::vector<numT> num_array;
-	// ç®—å¼æ“ä½œç¬¦
+	// ËãÊ½²Ù×÷·û
 	std::vector<char> operators;
 };
 
@@ -40,12 +40,12 @@ public:
 	numException(char operat,calculator::numT num_) : oper(operat),num(num_) {};
 	~numException() {}
 	/**
-	 * @brief è·å–å‘ç”Ÿé”™è¯¯çš„è¿ç®—ç¬¦ç§ç±»
+	 * @brief »ñÈ¡·¢Éú´íÎóµÄÔËËã·ûÖÖÀà
 	 * 
 	 */
 	char getoperator() { return oper; }
 	/**
-	 * @brief è·å–å‘ç”Ÿé”™è¯¯çš„è¿ç®—æ•°
+	 * @brief »ñÈ¡·¢Éú´íÎóµÄÔËËãÊı
 	 * 
 	 * @return calculator::numT 
 	 */
