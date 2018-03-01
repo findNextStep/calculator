@@ -12,13 +12,15 @@ protected:
     void inputNum(char a);
     void inputOper(char a);
     numT static switchToNum(std::string);
-    void pushNow(char oper = '\0',numT num = 0.0);
+    void pushNow(char oper,numT num);
+    void pushNow();
+    void makeResult();
 private:
-
     bool inInputMode;
     bool hasPoint;
     char lastOperator;
     std::string inputStack;
     std::string lastResult;
+    std::string lastFormula;
     calculator cal;
 };

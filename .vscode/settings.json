@@ -3,7 +3,12 @@
         "CMakeLists.txt": "makefile",
         "*.cmake": "makefile",
         "ostream": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "ios": "cpp",
+        "system_error": "cpp",
+        "vector": "cpp",
+        "xiosbase": "cpp",
+        "xstring": "cpp"
     },
     "files.encoding": "gb18030"
 }

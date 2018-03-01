@@ -25,13 +25,13 @@ int main() {
     char a;
     computer com;
     while (a = getch()) {
-        if (a == 't') {
+        if (a == 'T') {
             break;
         }
         cout << a<<endl;
         com.input(a);
-        cout << "result is  : " << com.getResult() <<endl;
         cout << "formula is : " << com.getFormula() << endl;
+        cout << "result is  : " << com.getResult() <<endl;
     }
     return 0;
 }
